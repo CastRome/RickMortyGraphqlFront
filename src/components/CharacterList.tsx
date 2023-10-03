@@ -38,6 +38,7 @@ function CharacterList({ page, filter }: CharacterListProps) {
     <div className="cardInfo">
       {characters?.map(({ id, name, image, status, species, gender }) => (
         <Card
+          key={id}
           sx={{
             backgroundColor: "#C8ccc4",
             border: "solid black 1px",
